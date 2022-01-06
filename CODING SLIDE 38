@@ -1,0 +1,35 @@
+package selfprogramming11;
+
+import java.util.Scanner;
+
+public class Slide38 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(readAge());
+		System.out.println(readAge(150));
+
+	}
+	public static int readAge()
+	{
+		Scanner read = new Scanner(System.in);
+		int age = 0;
+		do {
+			System.out.print("Please enter your age (1-100): ");
+			age = read.nextInt();
+		}while ((age<1) || (age>100));
+		return age;
+	}
+	
+	public static int readAge(int max)
+	{
+		Scanner read = new Scanner(System.in);
+		int age = 0;
+		do {
+			System.out.print("Please enter your age (1-" + max+"): ");
+			age = read.nextInt();
+		}while ((age<1) || (age>max));
+		return age;
+	}
+
+}
