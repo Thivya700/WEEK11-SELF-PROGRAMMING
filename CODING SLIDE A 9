@@ -1,0 +1,25 @@
+package selfprogramming11;
+import java.util.Scanner;
+public class SlideA9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   int item[] = new int[10];
+		   int i;
+		   //Read integers number and store in item[i]
+		   Scanner input = new Scanner(System.in);
+		   
+		   System.out.println("Enter ten integers number:");
+			for(i=0; i<item.length; i++)
+			  item[i] = input.nextInt();
+		    reverseOrder(item);
+
+	}
+	public static void reverseOrder(int [] item){	
+		   //Print the output in reverse order are:");
+		   System.out.println("The numbers in reverse order are:");
+		   for(int i = item.length-1; i >= 0; i--)
+			  System.out.println(item[i]);
+		}
+
+}
