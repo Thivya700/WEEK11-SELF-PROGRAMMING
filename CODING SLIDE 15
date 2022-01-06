@@ -1,0 +1,16 @@
+package selfprogramming11;
+
+public class Slide15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		showMessage();
+
+	}
+	public static void showMessage() {
+		String name = "Joyce";
+		System.out.println("Hello, " + name);
+		
+	}
+
+}
