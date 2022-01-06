@@ -1,0 +1,37 @@
+package selfprogramming11;
+
+public class SlideA5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	     int[] listA = {11,22,36,42,15,46,27,48,19,10};
+	     int total, indLargest;
+
+	    total = sumArray (listA);
+	    System.out.println("\n The sum of ListA is :" + total);
+
+	   indLargest = indexLargestElement (listA);
+	   System.out.println("\n The largest element is :" + listA[indLargest]);
+	}
+	
+	public static int sumArray(int[] list)
+	{
+	       int index;
+	       int sum = 0;
+	       for (index = 0; index < list.length; index++)
+	    	   sum = sum + list[index];
+	       return sum;
+	}
+
+	public static int indexLargestElement(int[] list)
+	{
+	         int index;
+	         int maxIndex = 0;
+	         for (index = 1; index < list.length; index++) {
+	        	 if(list[maxIndex] < list[index])
+	                    maxIndex = index;}
+	          return maxIndex;
+	} 	 
+
+
+}
